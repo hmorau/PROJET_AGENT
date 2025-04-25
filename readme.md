@@ -3,7 +3,7 @@
 ## Création projet AI sur Azure Foundry 
 Suivre le début de ce tutoriel : 
 - https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/03-agent-custom-functions.html#create-an-azure-ai-foundry-project
-
+- Remplir le fichier .env
 ## installation 
 - pip install -r requirements.txt
 - python create_db.py
