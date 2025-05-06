@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 //import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
+import Conversations from "./Conversations";
 //import Conversations from "./Conversations"; // Assurez-vous que le chemin est correct
 interface SidebarProps {
   userName: string;
@@ -23,8 +25,9 @@ const Sidebar: React.FC<SidebarProps> = ({ userName }) => {
         <div className="sidebar-content">
           {/* Bouton "Nouveau chat" redirigeant vers "/" */}
           <div className="new-chat-button">
-           <button>Nouveau chat</button>
-
+           <Link to="/">
+              <button>Nouveau chat</button>
+            </Link>
           </div>
           <h3>{userName}</h3>
           {/* Affichage du composant Conversations */}

@@ -10,3 +10,12 @@ export interface Message {
     text: string;
     sender: "user" | "bot";
   }
+
+export interface Agent {
+  id: string;
+  name: string;
+  model: string;
+  created_at: string;
+  instructions: string;
+}
+  

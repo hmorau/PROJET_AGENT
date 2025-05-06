@@ -1,0 +1,47 @@
+/* Style général pour la liste des conversations */
+.conversation-list {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 10px;
+    border: 0px solid #ccc;
+  }
+  
+  /* Style pour chaque élément de conversation */
+  .conversation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 0px solid #ccc;
+    background-color: #f8f9fa;
+    border-radius: 1px;
+    margin-bottom: 0px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style pour le texte de la conversation */
+  .conversation-item span {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  /* Style pour le bouton de suppression */
+  .conversation-item button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Afficher le bouton de suppression au survol */
+  .conversation-item:hover button {
+    display: inline-block;
+  }
+  
+  /* Changer la couleur de fond au survol */
+  .conversation-item:hover {
+    background-color: #f0f0f0;
+  }
+  
