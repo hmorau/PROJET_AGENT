@@ -1,0 +1,19 @@
+/* Le conteneur global de l'application de chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh; /* Pour occuper toute la hauteur de la fenêtre */
+    justify-content: center; /* Aligner verticalement au centre si besoin */
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  /* Style pour le message d'accueil centré */
+  .chat-greeting {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
