@@ -1,0 +1,74 @@
+/* Conteneur principal fixé en bas de la page */
+.chat-input-form {
+    position: fixed;
+    bottom: 17%; /* 20% au-dessus du bas de la page */
+    left: 25%;   /* Centré sur 50% de la largeur */
+    width: 50%;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #ced4da;
+  }
+  /* Style du champ de saisie */
+  .chat-input-input {
+    padding: 12px;
+    border: 0px solid #ced4da;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 98%;
+    font-size: 16px; 
+    resize: none;
+  }
+  .chat-input-input:focus {
+    background-color: #e9ecef;
+    border-color: #80bdff;
+    outline: none;
+  }
+  /* Ligne pour les boutons */
+  .chat-input-button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Conteneur pour le bouton de téléchargement de fichier */
+  .chat-input-file {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  /* Style du bouton de téléchargement */
+  .file-upload-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e9ecef;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .file-upload-btn:hover {
+    background-color: #d1d5db;
+  }
+  /* Style pour le nom du fichier sélectionné */
+  .file-name {
+    color: #333;
+  }
+  /* Style du bouton d'envoi */
+  .chat-input-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e9ecef;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .chat-input-button:hover {
+    background-color: #d1d5db;
+  }

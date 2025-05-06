@@ -1,0 +1,67 @@
+/* Conteneur de la sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* état déplié par défaut */
+    background-color: #f8f9fa; /* Couleur de fond claire */
+    color: #000; /* Couleur de texte noire */
+    transition: width 0.3s ease;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 20px; /* Espacement interne */
+    box-sizing: border-box;
+}
+
+.sidebar .new-chat-button {
+    position: absolute;
+    left: 20px;
+    top: 20px; /* Ajustement de la position verticale */
+    border: 1px solid #e6e6e667; /* Bordure plus visible */
+    background-color: #e6e6e6d1; /* Couleur de fond  */
+    border-radius: 10%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Etat replié de la sidebar */
+.sidebar.collapsed {
+    width: 50px; /* état replié */
+}
+
+/* Bouton de bascule placé en bordure droite */
+.sidebar .toggle-button {
+    position: absolute;
+    top: 15px; /* Ajustement de la position verticale */
+    right: 10px; /* Ajustement de la position horizontale */
+    width: 45px; /* Augmentation de la taille */
+    height: 45px; /* Augmentation de la taille */
+    background-color: #e6e6e6d1; /* Couleur de fond  */
+    border: 5px solid #e6e6e667; /* Bordure plus visible */
+    border-radius: 20%;
+    color: #000; /* Couleur de texte blanche */
+    font-size: 20px; /* Augmentation de la taille de la police */
+    line-height: 43px; /* Centrage vertical du texte */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour plus de relief */
+}
+
+/* Effet au survol du bouton */
+.sidebar .toggle-button:hover {
+    background-color: #e6e6e62f; /* Couleur de survol plus foncée */
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+
+/* Style pour le contenu interne de la sidebar */
+.sidebar-content {
+    margin-top: 60px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}

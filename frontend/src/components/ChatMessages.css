@@ -1,0 +1,32 @@
+.chat-messages {
+    position: fixed;
+    top: 10%;                          /* début de la fenêtre des messages */
+    bottom: 30%;           /* se termine juste au-dessus de l'input (20% du bas + 50px de hauteur) */
+    left: 27%;                         /* même alignement horizontal que l'input */
+    width: 45%;
+    overflow-y: auto;                  /* défilement vertical si nécessaire */
+    padding: 8px;
+  }
+
+  .message-item {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .message-user {
+    justify-content: flex-end;
+  }
+  .message-bot {
+    justify-content: flex-start;
+  }
+  .message-bubble {
+    background-color: #e6e6e6d1;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 100%;
+    word-break: break-word;
+    
+  }
+  .message-user .message-bubble {
+    background-color: #E6E6E6;
+  }
