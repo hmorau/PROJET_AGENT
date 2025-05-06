@@ -1,0 +1,13 @@
+[
+    {
+      "name": "Local SQLite",
+      "type": "sqlite",
+      "connection_string": "sqlite:///ma_base_de_donnees.db"
+    },
+    {
+      "name": "PostgreSQL Distant",
+      "type": "postgresql",
+      "connection_string": "postgresql://user:password@host:5432/mydb"
+    }
+  ]
+  
